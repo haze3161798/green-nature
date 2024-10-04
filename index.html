@@ -163,11 +163,13 @@
                 <h2 class="fw-bold">找計劃</h2>
                 <div>生態復育相關提案</div>
             </div>
-            <div class="col-sm-9 ps-5">
+            <div class="col-sm-9 ps-sm-5">
                 <div class="text-blue pb-2 fw-bold">找計劃</div>
+                <!-- 按下 en 會送出 不需要的話把 form 刪除 -->
                 <form class="mb-5">
                     <div class="shadow px-4 py-3 d-md-flex align-items-center" style="background: #ececec;">
                         <select class="form-select my-2" name="" id="">
+                            <!-- 自己塞資料喔 -->
                             <option disabled>請選擇</option>
                             <option disabled>1</option>
                         </select>
@@ -180,7 +182,7 @@
                 <div class="d-flex flex-wrap px-sm-2 mx-m-24 pb-4">
                     <!-- 這邊跑卡片迴圈 -->
                     <div class="col-sm-6 pb-3">
-                        <div class="shadow rounded overflow-hidden mx-2">
+                        <div class="shadow rounded overflow-hidden mx-sm-2">
                             <img class="w-100" src="./assets/cards/demo1.jpg" alt="">
 
                             <div class="fs-5 px-3 py-2">
@@ -200,11 +202,11 @@
 
         <div class="d-sm-flex flex-wrap">
             <div class="col-sm-3 ecology-border pb-3">
-
+                <!-- 這邊一樣 含下面要灌文字 -->
                 <h2 class="fw-bold">學知識</h2>
                 <div>環境生態教育學習</div>
             </div>
-            <div class="col-sm-9 ps-5">
+            <div class="col-sm-9 ps-sm-5">
                 <div class="text-blue pb-3 fw-bold">學知識</div>
                 <div class="fw-bold fs-5 d-flex justify-content-between align-items-center py-3">
                     <div>生態小旅行</div>
@@ -213,10 +215,10 @@
                             more</button>
                     </div>
                 </div>
-                <div class="d-flex flex-wrap px-2 mx-m-24 pb-4">
+                <div class="d-flex flex-wrap px-sm-2 mx-m-24 pb-4">
 
                     <div class="pb-3">
-                        <div class="shadow rounded overflow-hidden mx-2 d-sm-flex">
+                        <div class="shadow rounded overflow-hidden mx-sm-2 d-sm-flex">
                             <div class="col-sm-6 pe-sm-2">
                                 <img class="w-100" src="./assets/cards/demo1.jpg" alt="">
                             </div>
@@ -237,13 +239,20 @@
 </body>
 <script>
     const swiper = new Swiper(".swiper", {
+        // loop 為是否尋還播放(就是 到底了之後回到第一張) 不要的話把它刪除即可
+        loop: true,
         // slidesPerView 為控制輪播圖片數量的參數 看要幾個可自行依據大小作設定
         slidesPerView: 6,
+        // 是否自動換下一張 不要的話 把整個 obj 刪除即可 delay 為自動換下一張的時間
+        autoplay: {
+            delay: 3000,
+        },
         spaceBetween: 30,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
+        // 上下張按鈕 不需要一樣刪除 也要把 html 刪除
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
