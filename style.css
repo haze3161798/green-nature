@@ -1,0 +1,50 @@
+.text-primary {
+    color: #33552e !important;
+}
+
+.header-border {
+    border-bottom: 4px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.3) transparent;
+    border-style: solid;
+}
+
+.padding-33 {
+    padding-top: 33%;
+}
+
+.text-blue {
+    color: #676ad4;
+}
+
+.bg-light-white {
+    background-color: #eeeeee;
+}
+
+.ecology-border {
+    border-right: 2px;
+    border-color: transparent rgba(0, 0, 0, 0.3) transparent transparent;
+    border-style: solid;
+    text-align: left;
+    padding-right: 24px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .ecology-border {
+        border-right: 0;
+        text-align: center;
+        padding-right: 0;
+    }
+
+
+}
+
+@media (min-width: 576px) {
+    .mx-m-24 {
+        margin-left: -24px;
+        margin-right: -24px;
+    }
+}
