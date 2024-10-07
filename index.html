@@ -15,8 +15,8 @@
 
 <body>
     <header class="header-shadow  mb-5">
-        <div class="container py-3 d-flex justify-content-between align-items-center">
-            <div style="width: 150px;">
+        <div class="container py-4 d-flex justify-content-between align-items-center">
+            <div class="d-none d-sm-block" style="width: 150px;">
                 <img class="w-100" src="./assets/header/logo.png" alt="">
             </div>
             <h1 class="text-primary fw-bold">
@@ -31,13 +31,62 @@
         </div>
     </section>
     <section class="container pb-5">
-        <div class="row px-3 px-md-0">
+        <nav class="navbar navbar-expand-lg d-sm-none">
+            <div class="container-fluid">
+                <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mb-3">
+                            護生態
+                        </li>
+                        <li class="nav-item mb-3">
+                            守物種
+                        </li>
+                        <li class="nav-item mb-3">
+                            找計畫
+                        </li>
+                        <li class="nav-item mb-3">
+                            學知識
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row px-3 px-md-0 d-none d-sm-flex">
             <div class="col-sm-4 col-md-3">
-                <!-- 迴圈從這下面開始 -->
-                <div class="card mb-3 bg-light-white shadow border-0">
+                <div class="card mb-3 bg-light-white border-0 card-shadow">
                     <div class="card-body text-blue">
                         <div class="text-center fw-bold fs-5">護生態</div>
-                        <div class="text-center">內容內容內容內容內容內容內容</div>
+                        <div class="text-center">綠色社區生態復育中心源起</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
+                    <div class="card-body text-blue">
+                        <div class="text-center fw-bold fs-5">守物種</div>
+                        <div class="text-center">瀕危物種介紹</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
+                    <div class="card-body text-blue">
+                        <div class="text-center fw-bold fs-5">找計畫</div>
+                        <div class="text-center">生態復育相關提案</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
+                    <div class="card-body text-blue">
+                        <div class="text-center fw-bold fs-5">學知識</div>
+                        <div class="text-center">環境生態教育學習
+                        </div>
                     </div>
                 </div>
             </div>
@@ -61,43 +110,63 @@
     </section>
     <section class="pb-5">
         <div class="swiper">
-
             <div class="swiper-wrapper">
                 <!-- 圖自己放 複製到我下一個註解的地方 -->
                 <div class="swiper-slide">
-                    <div>
-                        <img class="w-100" src="./assets/swiper/demo1.jpg" alt="">
+                    <div class="position-relative p-16:9 overflow-hidden">
+                        <div
+                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                            <img class="w-100" src="./assets/swiper/demo1.jpg" alt="">
+                        </div>
                     </div>
                 </div>
                 <!-- 到這裡 在更下面是看效果的 可以刪了-->
                 <div class="swiper-slide">
-                    <div>
-                        <img class="w-100" src="./assets/swiper/demo2.jpg" alt="">
+                    <div class="position-relative p-16:9 overflow-hidden">
+                        <div
+                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                            <img class="w-100" src="./assets/swiper/demo2.jpg" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div>
-                        <img class="w-100" src="./assets/swiper/demo3.jpg" alt="">
+                    <div class="position-relative p-16:9 overflow-hidden">
+                        <div
+                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                            <img class="w-100" src="./assets/swiper/demo3.jpg" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div>
-                        <img class="w-100" src="./assets/swiper/demo4.jpg" alt="">
+                    <div class="position-relative p-16:9 overflow-hidden">
+                        <div
+                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                            <img class="w-100" src="./assets/swiper/demo4.jpg" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div>
-                        <img class="w-100" src="./assets/swiper/demo5.jpg" alt="">
+                    <div class="position-relative p-16:9 overflow-hidden">
+                        <div
+                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                            <img class="w-100" src="./assets/swiper/demo5.jpg" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div>
-                        <img class="w-100" src="./assets/swiper/demo6.jpg" alt="">
+                    <div class="position-relative p-16:9 overflow-hidden">
+                        <div
+                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                            <img class="w-100" src="./assets/swiper/demo6.jpg" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div>
-                        <img class="w-100" src="./assets/swiper/demo7.jpg" alt="">
+                    <div class="position-relative p-16:9 overflow-hidden">
+                        <div
+                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                            <img class="w-100" src="./assets/swiper/demo7.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -135,7 +204,45 @@
                     <!-- 這邊跑卡片迴圈 -->
                     <div class="col-sm-6 pb-3">
                         <div class="mx-sm-2">
-                            <div class="shadow rounded overflow-hidden ">
+                            <div class="card-shadow overflow-hidden ">
+                                <div class="overflow-hidden position-relative p-16:9">
+                                    <div
+                                        class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                        <img class="w-100" src="./assets/cards/demo1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <!-- 顏色要自己調整喔 -->
+                                <div class="px-3 py-2 text-white bg-primary fs-5 fw-bold">
+                                    內容內容內容內容內容內容內容
+                                </div>
+                                <div class="fs-5 px-3 pt-3 pb-4 fw-bold text-light-gray">
+                                    內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pb-3">
+                        <div class="mx-sm-2">
+                            <div class="card-shadow overflow-hidden ">
+                                <div class="overflow-hidden position-relative p-16:9">
+                                    <div
+                                        class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                        <img class="w-100" src="./assets/cards/demo1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <!-- 顏色要自己調整喔 -->
+                                <div class="px-3 py-2 text-white bg-primary fs-5 fw-bold">
+                                    內容內容內容內容內容內容內容
+                                </div>
+                                <div class="fs-5 px-3 pt-3 pb-4 fw-bold text-light-gray">
+                                    內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pb-3">
+                        <div class="mx-sm-2">
+                            <div class="card-shadow overflow-hidden ">
                                 <div class="overflow-hidden position-relative p-16:9">
                                     <div
                                         class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
@@ -180,9 +287,9 @@
                 <div class="d-flex flex-wrap px-sm-2 mx-m-24 pb-4">
 
                     <div class="pb-3">
-                        <div class="shadow rounded overflow-hidden mx-sm-2 d-sm-flex">
+                        <div class="card-shadow overflow-hidden mx-sm-2 d-sm-flex">
                             <div class="col-sm-6 pe-sm-2">
-                                <img class="w-100" src="./assets/cards/demo1.jpg" alt="">
+                                <img class="w-100" src="./assets/cards/demo3.jpg" alt="">
                             </div>
                             <div class="col-sm-6 p-2">
                                 <div>
@@ -204,12 +311,24 @@
         // loop 為是否尋還播放(就是 到底了之後回到第一張) 不要的話把它刪除即可
         loop: true,
         // slidesPerView 為控制輪播圖片數量的參數 看要幾個可自行依據大小作設定
-        slidesPerView: 6,
+        slidesPerView: 1,
         // 是否自動換下一張 不要的話 把整個 obj 刪除即可 delay 為自動換下一張的時間
         autoplay: {
             delay: 3000,
         },
         spaceBetween: 30,
+        // 每個大小要顯示幾張圖片 可自行調整
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 4,
+            },
+            1024: {
+                slidesPerView: 6,
+            }
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,

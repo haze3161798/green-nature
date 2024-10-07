@@ -13,13 +13,30 @@
             background-color: #5a67d9;
             color: #FFF;
         }
+
+        @media (min-width: 576px) {
+            .col-ms-6 {
+                flex: 0 0 auto;
+                width: 50% !important;
+            }
+
+            .w-sm-auto {
+                width: auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .w-sm-d-100 {
+                width: 100% !important;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header class="header-shadow mb-5">
         <div class="container py-3 d-flex justify-content-between align-items-center">
-            <div style="width: 150px;">
+            <div class="d-none d-sm-block" style="width: 150px;">
                 <img class="w-100" src="./assets/header/logo.png" alt="">
             </div>
             <h1 class="text-primary fw-bold">
@@ -27,14 +44,67 @@
             </h1>
         </div>
     </header>
+
     <section class="container pb-5">
+        <nav class="navbar navbar-expand-lg d-sm-none">
+            <div class="container-fluid">
+                <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mb-3">
+                            護生態
+                        </li>
+                        <li class="nav-item mb-3">
+                            守物種
+                        </li>
+                        <li class="nav-item mb-3">
+                            找計畫
+                        </li>
+                        <li class="nav-item mb-3">
+                            學知識
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="row px-3 px-md-0">
-            <div class="col-sm-4 col-md-3">
-                <!-- 迴圈從這下面開始 -->
-                <div class="card mb-3 bg-light-white shadow border-0">
-                    <div class="card-body text-blue">
-                        <div class="text-center fw-bold fs-5">護生態</div>
-                        <div class="text-center">內容內容內容內容內容內容內容</div>
+            <!-- 迴圈從這下面開始 -->
+            <div class="row px-3 px-md-0 d-none d-sm-flex">
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-3 bg-light-white border-0 card-shadow">
+                        <div class="card-body text-blue">
+                            <div class="text-center fw-bold fs-5">護生態</div>
+                            <div class="text-center">綠色社區生態復育中心源起</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
+                        <div class="card-body text-blue">
+                            <div class="text-center fw-bold fs-5">守物種</div>
+                            <div class="text-center">瀕危物種介紹</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
+                        <div class="card-body text-blue">
+                            <div class="text-center fw-bold fs-5">找計畫</div>
+                            <div class="text-center">生態復育相關提案</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
+                        <div class="card-body text-blue">
+                            <div class="text-center fw-bold fs-5">學知識</div>
+                            <div class="text-center">環境生態教育學習
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,17 +133,65 @@
                 </nav>
                 <div class="d-flex flex-wrap px-sm-2 mx-m-24 pb-4">
                     <!-- 這邊跑卡片迴圈 -->
-                    <div class="col-sm-6 pb-3">
+                    <div class="col-sm-6 pb-3 col-12">
                         <div class="px-2">
-                            <div class="shadow rounded overflow-hidden">
+                            <div class="card-shadow overflow-hidden">
                                 <div class="overflow-hidden position-relative p-4:3">
                                     <div
                                         class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
                                         <img class="w-100" src="./assets/cards/demo1.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="fs-5 px-3 py-4 text-light-gray">
-                                    <div class="pb-3">title</div>
+                                <div class="fs-5 px-3 py-4 text-light-gray d-flex d-sm-block">
+                                    <div class="pb-3 px-2">title</div>
+                                    <div class="pb-3">學名?</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pb-3 col-12">
+                        <div class="px-2">
+                            <div class="card-shadow overflow-hidden">
+                                <div class="overflow-hidden position-relative p-4:3">
+                                    <div
+                                        class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                        <img class="w-100" src="./assets/cards/demo1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="fs-5 px-3 py-4 text-light-gray d-flex d-sm-block">
+                                    <div class="pb-3 px-2">title</div>
+                                    <div class="pb-3">學名?</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pb-3 col-12">
+                        <div class="px-2">
+                            <div class="card-shadow overflow-hidden">
+                                <div class="overflow-hidden position-relative p-4:3">
+                                    <div
+                                        class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                        <img class="w-100" src="./assets/cards/demo1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="fs-5 px-3 py-4 text-light-gray d-flex d-sm-block">
+                                    <div class="pb-3 px-2">title</div>
+                                    <div class="pb-3">學名?</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pb-3 col-12">
+                        <div class="px-2">
+                            <div class="card-shadow overflow-hidden">
+                                <div class="overflow-hidden position-relative p-4:3">
+                                    <div
+                                        class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                        <img class="w-100" src="./assets/cards/demo1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="fs-5 px-3 py-4 text-light-gray d-flex d-sm-block">
+                                    <div class="pb-3 px-2">title</div>
                                     <div class="pb-3">學名?</div>
                                 </div>
                             </div>

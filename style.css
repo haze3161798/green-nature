@@ -43,6 +43,18 @@
 .text-light-gray {
     color: #636363;
 }
+.rounded {
+    border-radius: 10px !important;
+}
+.card-shadow {
+    box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+}
+.card-shadow:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px;
+}
 @media (max-width: 576px) {
     .ecology-border {
         border-right: 0;

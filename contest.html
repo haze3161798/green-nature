@@ -79,7 +79,7 @@
 <body>
     <header class="header-shadow mb-5">
         <div class="container py-3 d-flex justify-content-between align-items-center">
-            <div style="width: 150px;">
+            <div class="d-none d-sm-block" style="width: 150px;">
                 <img class="w-100" src="./assets/header/logo.png" alt="">
             </div>
             <h1 class="text-primary fw-bold">
@@ -87,14 +87,67 @@
             </h1>
         </div>
     </header>
+
     <section class="container pb-5">
+        <nav class="navbar navbar-expand-lg d-sm-none">
+            <div class="container-fluid">
+                <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mb-3">
+                            護生態
+                        </li>
+                        <li class="nav-item mb-3">
+                            守物種
+                        </li>
+                        <li class="nav-item mb-3">
+                            找計畫
+                        </li>
+                        <li class="nav-item mb-3">
+                            學知識
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="row px-3 px-md-0">
-            <div class="col-sm-4 col-md-3">
-                <!-- 迴圈從這下面開始 -->
-                <div class="card mb-3 bg-light-white shadow border-0">
-                    <div class="card-body text-blue">
-                        <div class="text-center fw-bold fs-5">護生態</div>
-                        <div class="text-center">內容內容內容內容內容內容內容</div>
+            <!-- 迴圈從這下面開始 -->
+            <div class="row px-3 px-md-0 d-none d-sm-flex">
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-3 bg-light-white border-0 card-shadow">
+                        <div class="card-body text-blue">
+                            <div class="text-center fw-bold fs-5">護生態</div>
+                            <div class="text-center">綠色社區生態復育中心源起</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
+                        <div class="card-body text-blue">
+                            <div class="text-center fw-bold fs-5">守物種</div>
+                            <div class="text-center">瀕危物種介紹</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
+                        <div class="card-body text-blue">
+                            <div class="text-center fw-bold fs-5">找計畫</div>
+                            <div class="text-center">生態復育相關提案</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
+                        <div class="card-body text-blue">
+                            <div class="text-center fw-bold fs-5">學知識</div>
+                            <div class="text-center">環境生態教育學習
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,7 +175,7 @@
                             class="swiper mySwiper2">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                    <img src="./assets//swiper/demo5.jpg" />
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
@@ -157,54 +210,59 @@
                         </div>
                     </div>
                 </div>
-                <div thumbsSlider="" class="swiper mySwiper">
-                    <!-- 輪播 這邊記得也要放圖 放跟上面一樣 -->
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                <div class="position-relative">
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <!-- 輪播 這邊記得也要放圖 放跟上面一樣 -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <h3 class="text-light-gray">title</h3>
-                <div class="pb-5 text-light-gray">學名?</div>
+
+                <h3 class="text-light-gray">名稱：琉球暗羅</h3>
+                <div class="pb-5 text-light-gray">Polyalthia liukiuensis
+                </div>
                 <div class="pb-5 text-light-gray">
                     <span>瀕危等級:</span>
-                    <span>等級</span>
+                    <span>嚴重瀕臨滅絕</span>
                 </div>
                 <div class="pb-5">
                     說明:<br>
-                    內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容
+                    琉球暗羅為番荔枝科 (Annonaceae) 暗羅屬 (Polyalthia) 常綠大喬木，枝暗褐色。葉互生，葉薄革質，橢圓形。花序腋生或與葉對生，花序有花1-6朵。核果橢圓球形，成熟時黑色。
+                    分佈於蘭嶼，屬嚴重瀕臨滅絕之物種。
                 </div>
                 <div>
-                    <span>保護方式:</span>
-                    <span>內容內容內容內容內容</span>
+                    <span>保種方式:</span>
+                    <span>1. 高壓繁殖。2. 播種繁殖。</span>
                 </div>
             </div>
     </section>
@@ -214,7 +272,22 @@
         // 下面那排的間距
         spaceBetween: 10,
         // 下面那排的數量
-        slidesPerView: 6,
+        slidesPerView: 3,
+        breakpoints: {
+            576: {
+                slidesPerView: 4,
+            },
+            768: {
+                slidesPerView: 5,
+            },
+            1024: {
+                slidesPerView: 6,
+            },
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
     const swiper2 = new Swiper(".mySwiper2", {
         spaceBetween: 10,
