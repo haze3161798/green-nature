@@ -11,6 +11,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,6 +26,15 @@
             </h1>
         </div>
     </header>
+    <div class="pb-5 container">
+        <nav class="navbar navbar-expand-lg d-lg-none">
+            <div class="container-fluid">
+                <button class="navbar-toggler mb-3" type="button" id="nav-open-close-button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
     <section class="container padding-33 position-relative overflow-hidden mb-5">
         <div
             class="position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center pb-5">
@@ -31,61 +42,36 @@
         </div>
     </section>
     <section class="container pb-5">
-        <nav class="navbar navbar-expand-lg d-sm-none">
-            <div class="container-fluid">
-                <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item mb-3">
-                            護生態
-                        </li>
-                        <li class="nav-item mb-3">
-                            守物種
-                        </li>
-                        <li class="nav-item mb-3">
-                            找計畫
-                        </li>
-                        <li class="nav-item mb-3">
-                            學知識
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="row px-3 px-md-0 d-none d-sm-flex">
-            <div class="col-sm-4 col-md-3">
-                <div class="card mb-3 bg-light-white border-0 card-shadow">
-                    <div class="card-body text-blue">
+        <div class="row px-3 px-md-0 d-none d-lg-flex nav-open-close" id="nav-open-close">
+            <div class="col-6 col-lg-3">
+                <div class="card mb-3 bg-light-white border-0 card-shadow" style="height: 160px;">
+                    <div class="card-body nav-text d-flex flex-column justify-content-center">
                         <div class="text-center fw-bold fs-5">護生態</div>
-                        <div class="text-center">綠色社區生態復育中心源起</div>
+                        <div class="text-center" style="letter-spacing:-0.5px">綠色社區生態復育中心源起</div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 col-md-3">
-                <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
-                    <div class="card-body text-blue">
+            <div class="col-6 col-lg-3">
+                <div class="card mb-3 bg-light-white shadow border-0 card-shadow" style="height: 160px;">
+                    <div class="card-body nav-text d-flex flex-column justify-content-center">
                         <div class="text-center fw-bold fs-5">守物種</div>
-                        <div class="text-center">瀕危物種介紹</div>
+                        <div class="text-center" style="letter-spacing:-0.5px">瀕危物種介紹</div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 col-md-3">
-                <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
-                    <div class="card-body text-blue">
+            <div class="col-6 col-lg-3">
+                <div class="card mb-3 bg-light-white shadow border-0 card-shadow" style="height: 160px;">
+                    <div class="card-body nav-text d-flex flex-column justify-content-center">
                         <div class="text-center fw-bold fs-5">找計畫</div>
-                        <div class="text-center">生態復育相關提案</div>
+                        <div class="text-center" style="letter-spacing:-0.5px">生態復育相關提案</div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 col-md-3">
-                <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
-                    <div class="card-body text-blue">
+            <div class="col-6 col-lg-3">
+                <div class="card mb-3 bg-light-white shadow border-0 card-shadow" style="height: 160px;">
+                    <div class="card-body nav-text d-flex flex-column justify-content-center">
                         <div class="text-center fw-bold fs-5">學知識</div>
-                        <div class="text-center">環境生態教育學習
+                        <div class="text-center" style="letter-spacing:-0.5px">環境生態教育學習
                         </div>
                     </div>
                 </div>
@@ -98,11 +84,11 @@
             <div class="col-sm-3 ecology-border pb-3">
                 <!-- 灌文字 -->
                 <h2 class="fw-bold text-light-gray">護生態</h2>
-                <div class="text-light-gray">內容內容內容內容內容內容內容</div>
+                <div class="text-light-gray fs-5">內容內容內容內容內容內容內容</div>
             </div>
             <div class="col-sm-9 ps-5">
-                <div class="text-blue pb-2 fw-bold ">護生態</div>
-                <div>
+                <div class="text-blue pb-2 fw-bold fs-4">護生態</div>
+                <div class="fs-5">
                     內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容
                 </div>
             </div>
@@ -181,11 +167,11 @@
         <div class="d-sm-flex flex-wrap">
             <div class="col-sm-3 ecology-border pb-3 text-light-gray">
                 <!-- 灌文字 -->
-                <h2 class="fw-bold ">找計劃</h2>
-                <div>生態復育相關提案</div>
+                <h2 class="fw-bold text-light-gray">找計劃</h2>
+                <div class="fs-5">生態復育相關提案</div>
             </div>
             <div class="col-sm-9 ps-sm-5">
-                <div class="text-blue pb-4">找計劃</div>
+                <div class="text-blue pb-4 fs-4">找計劃</div>
                 <!-- 按下 en 會送出 不需要的話把 form 刪除 -->
                 <form class="mb-5">
                     <div class="shadow px-4 py-3 d-md-flex align-items-center" style="background: #ececec;">
@@ -307,6 +293,14 @@
 
 </body>
 <script>
+    const navOpenClose = $('#nav-open-close')
+    $('#nav-open-close-button').on('click', () => {
+        if (navOpenClose.hasClass('active')) {
+            navOpenClose.removeClass('active')
+            return
+        }
+        navOpenClose.addClass('active')
+    })
     const swiper = new Swiper(".swiper", {
         // loop 為是否尋還播放(就是 到底了之後回到第一張) 不要的話把它刪除即可
         loop: true,

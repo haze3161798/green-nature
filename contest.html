@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <style>
         .swiper {
             width: 100%;
@@ -89,64 +90,43 @@
     </header>
 
     <section class="container pb-5">
-        <nav class="navbar navbar-expand-lg d-sm-none">
+        <nav class="navbar navbar-expand-lg d-lg-none">
             <div class="container-fluid">
-                <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler mb-3" type="button" id="nav-open-close-button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item mb-3">
-                            護生態
-                        </li>
-                        <li class="nav-item mb-3">
-                            守物種
-                        </li>
-                        <li class="nav-item mb-3">
-                            找計畫
-                        </li>
-                        <li class="nav-item mb-3">
-                            學知識
-                        </li>
-
-                    </ul>
-                </div>
             </div>
         </nav>
-        <div class="row px-3 px-md-0">
-            <!-- 迴圈從這下面開始 -->
-            <div class="row px-3 px-md-0 d-none d-sm-flex">
-                <div class="col-sm-4 col-md-3">
-                    <div class="card mb-3 bg-light-white border-0 card-shadow">
-                        <div class="card-body text-blue">
-                            <div class="text-center fw-bold fs-5">護生態</div>
-                            <div class="text-center">綠色社區生態復育中心源起</div>
-                        </div>
+        <div class="row px-3 px-md-0 d-none d-lg-flex nav-open-close" id="nav-open-close">
+            <div class="col-6 col-lg-3">
+                <div class="card mb-3 bg-light-white border-0 card-shadow" style="height: 160px;">
+                    <div class="card-body nav-text d-flex flex-column justify-content-center">
+                        <div class="text-center fw-bold fs-5">護生態</div>
+                        <div class="text-center" style="letter-spacing:-0.5px">綠色社區生態復育中心源起</div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-3">
-                    <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
-                        <div class="card-body text-blue">
-                            <div class="text-center fw-bold fs-5">守物種</div>
-                            <div class="text-center">瀕危物種介紹</div>
-                        </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card mb-3 bg-light-white shadow border-0 card-shadow" style="height: 160px;">
+                    <div class="card-body nav-text d-flex flex-column justify-content-center">
+                        <div class="text-center fw-bold fs-5">守物種</div>
+                        <div class="text-center" style="letter-spacing:-0.5px">瀕危物種介紹</div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-3">
-                    <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
-                        <div class="card-body text-blue">
-                            <div class="text-center fw-bold fs-5">找計畫</div>
-                            <div class="text-center">生態復育相關提案</div>
-                        </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card mb-3 bg-light-white shadow border-0 card-shadow" style="height: 160px;">
+                    <div class="card-body nav-text d-flex flex-column justify-content-center">
+                        <div class="text-center fw-bold fs-5">找計畫</div>
+                        <div class="text-center" style="letter-spacing:-0.5px">生態復育相關提案</div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-3">
-                    <div class="card mb-3 bg-light-white shadow border-0 card-shadow">
-                        <div class="card-body text-blue">
-                            <div class="text-center fw-bold fs-5">學知識</div>
-                            <div class="text-center">環境生態教育學習
-                            </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card mb-3 bg-light-white shadow border-0 card-shadow" style="height: 160px;">
+                    <div class="card-body nav-text d-flex flex-column justify-content-center">
+                        <div class="text-center fw-bold fs-5">學知識</div>
+                        <div class="text-center" style="letter-spacing:-0.5px">環境生態教育學習
                         </div>
                     </div>
                 </div>
@@ -268,6 +248,14 @@
     </section>
 </body>
 <script>
+    const navOpenClose = $('#nav-open-close')
+    $('#nav-open-close-button').on('click', () => {
+        if (navOpenClose.hasClass('active')) {
+            navOpenClose.removeClass('active')
+            return
+        }
+        navOpenClose.addClass('active')
+    })
     const swiper = new Swiper(".mySwiper", {
         // 下面那排的間距
         spaceBetween: 10,
