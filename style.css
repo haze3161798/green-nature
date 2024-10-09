@@ -79,8 +79,8 @@
 }
 
 @media (min-width: 576px) {
-    .mx-m-24 {
-        margin-left: -24px;
-        margin-right: -24px;
+    .mx-m-16 {
+        margin-left: -16px;
+        margin-right: -16px;
     }
 }

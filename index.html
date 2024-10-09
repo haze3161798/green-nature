@@ -26,15 +26,7 @@
             </h1>
         </div>
     </header>
-    <div class="pb-5 container px-0">
-        <nav class="navbar navbar-expand-lg d-lg-none">
-            <div class="container-fluid px-0">
-                <button class="navbar-toggler mb-3" type="button" id="nav-open-close-button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
-    </div>
+
     <section class="container padding-33 position-relative overflow-hidden mb-5">
         <div
             class="position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center pb-5">
@@ -42,7 +34,24 @@
         </div>
     </section>
     <section class="container pb-5">
-        <div class="row px-3 px-md-0 d-none d-lg-flex nav-open-close" id="nav-open-close">
+        <nav class="navbar navbar-expand-lg position-fixed d-lg-none" style="left: 80%; z-index: 10;">
+            <div class="container-fluid bg-white">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#">護生態</a>
+                        <a class="nav-link" href="#">守物種</a>
+                        <a class="nav-link" href="#">守物種</a>
+                        <a class="nav-link" href="#">學知識</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row px-3 px-md-0 d-none d-lg-flex">
             <div class="col-6 col-lg-3">
                 <div class="card mb-3 bg-light-white border-0 card-shadow" style="height: 160px;">
                     <div class="card-body nav-text d-flex flex-column justify-content-center">
@@ -87,7 +96,7 @@
                 <div class="text-light-gray fs-5">內容內容內容內容內容內容內容</div>
             </div>
             <div class="col-sm-9 ps-5">
-                <div class="text-blue pb-2 fw-bold fs-4">護生態</div>
+                <h3 class="text-blue pb-2 fw-bold fs-4">護生態</h3>
                 <div class="fs-5">
                     內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容
                 </div>
@@ -171,7 +180,7 @@
                 <div class="fs-5">生態復育相關提案</div>
             </div>
             <div class="col-sm-9 ps-sm-5">
-                <div class="text-blue pb-4 fs-4">找計劃</div>
+                <h3 class="text-blue pb-4 fs-4 fw-bold">找計劃</h3>
                 <!-- 按下 en 會送出 不需要的話把 form 刪除 -->
                 <form class="mb-5">
                     <div class="shadow px-4 py-3 d-md-flex align-items-center" style="background: #ececec;">
@@ -186,7 +195,7 @@
                             style="background-color: #404040;">送出</button>
                     </div>
                 </form>
-                <div class="d-flex flex-wrap px-sm-2 mx-m-24 pb-4">
+                <div class="d-flex flex-wrap px-sm-2 mx-m-16 pb-4">
                     <!-- 這邊跑卡片迴圈 -->
                     <div class="col-sm-6 pb-3">
                         <div class="mx-sm-2">
@@ -262,7 +271,7 @@
                 <div>環境生態教育學習</div>
             </div>
             <div class="col-sm-9 ps-sm-5">
-                <div class="text-blue pb-4 fw-bold">學知識</div>
+                <h3 class="text-blue pb-4 fw-bold fs-4">學知識</h3>
                 <div class="fw-bold fs-5 d-flex justify-content-between align-items-center py-3">
                     <div class="text-light-gray">生態小旅行</div>
                     <div class="d-flex justify-content-center">
@@ -270,7 +279,7 @@
                             more</button>
                     </div>
                 </div>
-                <div class="d-flex flex-wrap px-sm-2 mx-m-24 pb-4">
+                <div class="d-flex flex-wrap px-sm-2 mx-m-16 pb-4">
 
                     <div class="pb-3">
                         <div class="card-shadow overflow-hidden mx-sm-2 d-sm-flex">
@@ -293,14 +302,6 @@
 
 </body>
 <script>
-    const navOpenClose = $('#nav-open-close')
-    $('#nav-open-close-button').on('click', () => {
-        if (navOpenClose.hasClass('active')) {
-            navOpenClose.removeClass('active')
-            return
-        }
-        navOpenClose.addClass('active')
-    })
     const swiper = new Swiper(".swiper", {
         // loop 為是否尋還播放(就是 到底了之後回到第一張) 不要的話把它刪除即可
         loop: true,
@@ -320,7 +321,7 @@
                 slidesPerView: 4,
             },
             1024: {
-                slidesPerView: 6,
+                slidesPerView: 5,
             }
         },
         pagination: {

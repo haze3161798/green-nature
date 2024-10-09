@@ -79,7 +79,7 @@
 
 <body>
     <header class="header-shadow mb-5">
-        <div class="container py-3 d-flex justify-content-between align-items-center">
+        <div class="container py-4 d-flex justify-content-between align-items-center">
             <div class="d-none d-sm-block" style="width: 150px;">
                 <img class="w-100" src="./assets/header/logo.png" alt="">
             </div>
@@ -90,11 +90,21 @@
     </header>
 
     <section class="container pb-5">
-        <nav class="navbar navbar-expand-lg d-lg-none">
-            <div class="container-fluid">
-                <button class="navbar-toggler mb-3" type="button" id="nav-open-close-button">
+        <nav class="navbar navbar-expand-lg position-fixed d-lg-none" style="left: 80%; z-index: 10;">
+            <div class="container-fluid bg-white">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#">護生態</a>
+                        <a class="nav-link" href="#">守物種</a>
+                        <a class="nav-link" href="#">守物種</a>
+                        <a class="nav-link" href="#">學知識</a>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="row px-3 px-md-0 d-none d-lg-flex nav-open-close" id="nav-open-close">
@@ -148,41 +158,91 @@
                         <li class="breadcrumb-item active" aria-current="page">守護種</li>
                     </ol>
                 </nav>
-                <div class="position-relative padding-33">
-                    <div class="position-absolute top-0 start-0 end-0 bottom-0">
-                        <!-- 輪播 上下兩邊的圖都要放喔 -->
+                <div class="position-relative p-16:9 overflow-hidden">
+                    <div
+                        class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
                         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
                             class="swiper mySwiper2">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="./assets//swiper/demo5.jpg" />
+                                    <div class="position-relative p-16:9 overflow-hidden w-100">
+                                        <div
+                                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                    <div class="position-relative p-16:9 overflow-hidden w-100">
+                                        <div
+                                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                    <div class="position-relative p-16:9 overflow-hidden w-100">
+                                        <div
+                                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                    <div class="position-relative p-16:9 overflow-hidden w-100">
+                                        <div
+                                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                    <div class="position-relative p-16:9 overflow-hidden w-100">
+                                        <div
+                                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                    <div class="position-relative p-16:9 overflow-hidden w-100">
+                                        <div
+                                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                    <div class="position-relative p-16:9 overflow-hidden w-100">
+                                        <div
+                                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                    <div class="position-relative p-16:9 overflow-hidden w-100">
+                                        <div
+                                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                    <div class="position-relative p-16:9 overflow-hidden w-100">
+                                        <div
+                                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                    <div class="position-relative p-16:9 overflow-hidden w-100">
+                                        <div
+                                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center justify-content-center">
+                                            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="swiper-button-next"></div>
@@ -190,38 +250,39 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="position-relative">
                     <div thumbsSlider="" class="swiper mySwiper">
                         <!-- 輪播 這邊記得也要放圖 放跟上面一樣 -->
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-slide cursor-pointer">
                                 <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide cursor-pointer">
                                 <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide cursor-pointer">
                                 <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide cursor-pointer">
                                 <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide cursor-pointer">
                                 <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide cursor-pointer">
                                 <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide cursor-pointer">
                                 <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide cursor-pointer">
                                 <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide cursor-pointer">
                                 <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide cursor-pointer">
                                 <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
                             </div>
                         </div>
@@ -248,14 +309,6 @@
     </section>
 </body>
 <script>
-    const navOpenClose = $('#nav-open-close')
-    $('#nav-open-close-button').on('click', () => {
-        if (navOpenClose.hasClass('active')) {
-            navOpenClose.removeClass('active')
-            return
-        }
-        navOpenClose.addClass('active')
-    })
     const swiper = new Swiper(".mySwiper", {
         // 下面那排的間距
         spaceBetween: 10,

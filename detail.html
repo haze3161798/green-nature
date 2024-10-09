@@ -16,6 +16,11 @@
             color: #FFF;
         }
 
+        .page:hover {
+            background-color: #5a67d9;
+            color: #FFF;
+        }
+
         @media (min-width: 576px) {
             .col-ms-6 {
                 flex: 0 0 auto;
@@ -36,8 +41,8 @@
 </head>
 
 <body>
-    <header class="header-shadow mb-5">
-        <div class="container py-3 d-flex justify-content-between align-items-center">
+    <header class="header-shadow  mb-5">
+        <div class="container py-4 d-flex justify-content-between align-items-center">
             <div class="d-none d-sm-block" style="width: 150px;">
                 <img class="w-100" src="./assets/header/logo.png" alt="">
             </div>
@@ -48,14 +53,24 @@
     </header>
 
     <section class="container pb-5">
-        <nav class="navbar navbar-expand-lg d-lg-none">
-            <div class="container-fluid">
-                <button class="navbar-toggler mb-3" type="button" id="nav-open-close-button">
+        <nav class="navbar navbar-expand-lg position-fixed d-lg-none" style="left: 80%; z-index: 10;">
+            <div class="container-fluid bg-white">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#">護生態</a>
+                        <a class="nav-link" href="#">守物種</a>
+                        <a class="nav-link" href="#">守物種</a>
+                        <a class="nav-link" href="#">學知識</a>
+                    </div>
+                </div>
             </div>
         </nav>
-        <div class="row px-3 px-md-0 d-none d-lg-flex nav-open-close" id="nav-open-close">
+        <div class="row px-3 px-md-0 d-none d-lg-flex">
             <div class="col-6 col-lg-3">
                 <div class="card mb-3 bg-light-white border-0 card-shadow" style="height: 160px;">
                     <div class="card-body nav-text d-flex flex-column justify-content-center">
@@ -75,7 +90,7 @@
             <div class="col-6 col-lg-3">
                 <div class="card mb-3 bg-light-white shadow border-0 card-shadow" style="height: 160px;">
                     <div class="card-body nav-text d-flex flex-column justify-content-center">
-                        <div class="text-center fw-bold fs-5">找計畫</div>
+                        <div class="text-center fw-bold fs-5">守物種</div>
                         <div class="text-center" style="letter-spacing:-0.5px">生態復育相關提案</div>
                     </div>
                 </div>
@@ -124,7 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="fs-5 px-3 py-4 text-light-gray ">
-                                    <div class="pb-3 px-2">title</div>
+                                    <div class="pb-3">title</div>
                                     <div class="pb-3">學名?</div>
                                 </div>
                             </div>
@@ -140,7 +155,7 @@
                                     </div>
                                 </div>
                                 <div class="fs-5 px-3 py-4 text-light-gray">
-                                    <div class="pb-3 px-2">title</div>
+                                    <div class="pb-3">title</div>
                                     <div class="pb-3">學名?</div>
                                 </div>
                             </div>
@@ -156,7 +171,7 @@
                                     </div>
                                 </div>
                                 <div class="fs-5 px-3 py-4 text-light-gray">
-                                    <div class="pb-3 px-2">title</div>
+                                    <div class="pb-3">title</div>
                                     <div class="pb-3">學名?</div>
                                 </div>
                             </div>
@@ -172,7 +187,7 @@
                                     </div>
                                 </div>
                                 <div class="fs-5 px-3 py-4 text-light-gray d-flex d-sm-block">
-                                    <div class="pb-3 px-2">title</div>
+                                    <div class="pb-3">title</div>
                                     <div class="pb-3">學名?</div>
                                 </div>
                             </div>
@@ -181,30 +196,21 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     <!-- 下面是分頁 自行依照內容套迴圈 -->
-                    <button class="btn rounded shadow page mx-2">prve</button>
-                    <button class="btn rounded shadow page mx-2 active">
+                    <button class="btn rounded shadow page mx-1">prve</button>
+                    <button class="btn rounded shadow page mx-1 active">
                         1</button>
-                    <button class="btn rounded shadow page mx-2">
+                    <button class="btn rounded shadow page mx-1">
                         ...</button>
-                    <button class="btn rounded shadow page mx-2">
+                    <button class="btn rounded shadow page mx-1">
                         3</button>
-                    <button class="btn rounded shadow page mx-2">
+                    <button class="btn rounded shadow page mx-1">
                         next>></button>
                 </div>
             </div>
         </div>
     </section>
 </body>
-<script>
-    const navOpenClose = $('#nav-open-close')
-    $('#nav-open-close-button').on('click', () => {
-        if (navOpenClose.hasClass('active')) {
-            navOpenClose.removeClass('active')
-            return
-        }
-        navOpenClose.addClass('active')
-    })
-</script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
